@@ -17,12 +17,21 @@ blueprint:
           integration: mobile_app
           multiple: false
 
-    input_boolean:
-      name: Dedicated input_boolean
-      description: Create and set here a input_boolean to handle history and state of the automation
-      selector:
+ #   input_boolean:
+ #     name: Dedicated input_boolean
+ #     description: Create and set here a input_boolean to handle history and state of the automation
+ #     selector:
+ #       entity:
+ #         domain: input_boolean
+ #         multiple: false
+
+   input_select:
+     who_cooks:
+       name: Dedicated input_select
+       description: Create and set here a input_select to handle history and state of the automation
+        selector:
         entity:
-          domain: input_boolean
+          domain: input_select
           multiple: false
 
     notification_title:
